@@ -1,0 +1,43 @@
+.countdown {
+  display: flex;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 8px 12px 12px 12px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  background-color: @color-static-white40;
+}
+
+.countdown__list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.countdown__item {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  min-width: 80px;
+  position: relative;
+  &:not(:last-child)::after {
+    position: absolute;
+    content: "";
+    top: 25px;
+    right: -10px;
+    width: 20px;
+    height: 2px;
+    background: @color-static-white40;
+    transform: rotate(-90deg);
+  }
+}
+
+.countdown__title {
+  color: @color-static-white;
+}
+
+.countdown__num {
+  margin: 0;
+  font-family: @font-montserrat;
+  color: @color-static-white;
+}

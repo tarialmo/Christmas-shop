@@ -1,0 +1,46 @@
+.gift__link:hover .gift__title {
+  color: @color-primary;
+}
+
+.gift__imgwrapper {
+  width: 310px;
+  height: 230px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background-color: @color-content-background;
+}
+
+.gift__textwrapper {
+  display: flex;
+  flex-direction: column-reverse;
+  height: 112px;
+  padding: 20px;
+  background-color: @color-static-white;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.gift__title {
+  margin: 0;
+  margin-bottom: auto;
+  color: @color-dark;
+  text-transform: uppercase;
+}
+
+.gift__label {
+  &.gift__label--work {
+    color: @color-tag-purple;
+  }
+  &.gift__label--health {
+    color: @color-tag-green;
+  }
+  &.gift__label--harmony {
+    color: @color-tag-pink;
+  }
+}
+
+.gift__label {
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  color: @color-dark;
+}

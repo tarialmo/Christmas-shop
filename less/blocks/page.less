@@ -1,0 +1,30 @@
+.page {
+  height: 100%;
+  scroll-behavior: smooth;
+  font-family: @font-montserrat;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 148%;
+  color: @color-dark;
+}
+
+.page__body {
+  min-width: @mobile-width-min;
+  min-height: 100%;
+  margin: 0;
+  background-color: @color-static-white;
+  font-size: 1rem;
+}
+
+.page__wrapper {
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+  min-height: 100vh;
+  background-color: @color-static-white;
+  width: @desktop-width;
+  margin: 0 auto;
+  box-shadow: 0 5px 15px 0 rgba(@color-static-white, 0.8);
+}
+
+

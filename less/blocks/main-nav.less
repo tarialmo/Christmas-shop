@@ -1,0 +1,32 @@
+.main-nav {
+  max-width: 85%;
+}
+
+.main-nav__toggle {
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.site-list {
+  margin: 0;
+  margin-left: auto;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.site-list__item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.site-list__link {
+  display: block;
+  padding: 12px 20px;
+  color: @color-dark;
+  &:hover {
+    background-color: @color-primary10;
+    color: @color-primary;
+  }
+}
