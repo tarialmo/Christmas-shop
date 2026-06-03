@@ -1,0 +1,54 @@
+.contacts__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 12px;
+  margin-bottom: 65px;
+}
+
+.contacts__wrapper {
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 12px;
+  background-color: @color-content-background;
+  border-radius: 20px;
+  position: relative;
+  &::after {
+    position: absolute;
+    content: "";
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+  }
+    &.contacts__wrapper-tel::after {
+      background: url(../../img/santa-claus.png) no-repeat;
+    }
+    &.contacts__wrapper-address::after {
+      background: url(../../img/christmas-tree.png) no-repeat;
+    }
+    &.contacts__wrapper-mail::after {
+      background: url(../../img/snake.png) no-repeat;
+    }
+  }
+
+.contacts__title {
+  margin: 0;
+  text-align: center;
+}
+
+.contacts__link {
+  display: block;
+  padding-top: 105px;
+  margin-bottom: 12px;
+  text-align: center;
+  color: @color-dark;
+}
+
+.contacts__wrapper:hover .contacts__title,
+.contacts__wrapper:hover .contacts__link {
+  display: block;
+  color: @color-primary;
+  cursor: pointer;
+}
